@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function NavLink(props) {
   return (
@@ -15,3 +16,13 @@ function NavLink(props) {
 }
 
 export default NavLink;
+
+NavLink.propTypes = {
+  alt: PropTypes.string,
+  li: PropTypes.string,
+  link: PropTypes.string,
+  links: PropTypes.array.isRequired,
+  page: PropTypes.string,
+  target: PropTypes.string,
+  ul: PropTypes.string
+};
