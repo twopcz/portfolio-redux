@@ -8,47 +8,56 @@ function Nav() {
     {
       page: 'about',
       link: 'about',
-      alt: 'About Page'
+      alt: 'About Page',
     },
     {
       page: 'projects',
       link: 'projects',
-      alt: 'Projects Page'
+      alt: 'Projects Page',
     },
     {
       page: 'contact',
       link: 'contact',
-      alt: 'Contact Pages'
-    }
+      alt: 'Contact Pages',
+    },
   ];
 
   const connections = [
     {
-      page: <i className="fab fa-github"></i>,
+      page: <i className='fab fa-github'></i>,
       link: 'https://github.com/twopcz',
       alt: 'GitHub',
-      target: '_blank'
+      target: '_blank',
     },
     {
-      page: <i className="fab fa-linkedin"></i>,
+      page: <i className='fab fa-linkedin'></i>,
       link: 'https://www.linkedin.com/in/itsjustinle/',
       alt: 'LinkedIn',
-      target: '_blank'
+      target: '_blank',
     },
     {
-      page: <i className="fas fa-file"></i>,
-      link: 'https://drive.google.com/open?id=1Lfk7fuRK00QHNPZGsmHmHFtbw0MWiwHb',
+      page: <i className='fas fa-file'></i>,
+      link:
+        'https://drive.google.com/open?id=1Lfk7fuRK00QHNPZGsmHmHFtbw0MWiwHb',
       alt: 'Resume',
-      target: '_blank'
-    }
+      target: '_blank',
+    },
   ];
 
   return (
     <nav className='navbar navbar-light bg-dark shadow'>
-      <div className='d-flex w-100'>
+      <div className='d-flex flex-sm-row flex-column w-100 justify-content-between'>
         <NavBrand />
-        <NavLink ul='nav justify-content-center font-weight-bold' li='nav-link' links={pages} />
-        <NavLink ul='nav justify-content-center float-right' li='nav-link' links={connections} />
+        <NavLink
+          ul='nav justify-content-center font-weight-bold'
+          li='nav-link'
+          links={pages}
+        />
+        <NavLink
+          ul='nav justify-content-center float-md-right'
+          li='nav-link'
+          links={connections}
+        />
       </div>
     </nav>
   );
