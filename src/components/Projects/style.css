@@ -11,9 +11,9 @@
 }
 
 #projects-top {
-  background: linear-gradient(red 50%, blue 50%);
+  background: linear-gradient(#6f785d 50%, #ffffff 50%);
 }
 
 #projects-bottom {
-  background-color: blue;
+  background-color: #ffffff;
 }
