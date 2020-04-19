@@ -7,7 +7,7 @@ function NavLink(props) {
       <ul className={props.ul}>
         {props.links.map((data, index) => (
           <li className={props.li} key={`${index}-li`}>
-            <a href={data.link} alt={data.alt} target={data.target}>{data.page}</a>
+            <a href={data.link} title={data.title} target={data.target}>{data.page}</a>
           </li>
         ))}
       </ul>
