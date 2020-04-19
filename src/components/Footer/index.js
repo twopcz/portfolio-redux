@@ -3,7 +3,7 @@ import './style.css';
 
 function Footer() {
   return (
-    <footer className='row footer justify-content-center' id='copyright-container'>
+    <footer className='footer text-center' id='copyright-container'>
       <div>
         <span>
           copyright &copy; 2020 <b>|</b> handcrafted by <b>me</b>
