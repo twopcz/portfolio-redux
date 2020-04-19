@@ -3,49 +3,51 @@ import React from 'react';
 import NavBrand from '../NavBrand';
 import NavLink from '../NavLink';
 
+import './style.css';
+
+const pages = [
+  {
+    page: 'about',
+    link: 'about',
+    title: 'About Page',
+  },
+  {
+    page: 'projects',
+    link: 'projects',
+    title: 'Projects Page',
+  },
+  {
+    page: 'contact',
+    link: 'contact',
+    title: 'Contact Pages',
+  },
+];
+
+const connections = [
+  {
+    page: <i className='fab fa-github'></i>,
+    link: 'https://github.com/twopcz',
+    title: 'GitHub',
+    target: '_blank',
+  },
+  {
+    page: <i className='fab fa-linkedin'></i>,
+    link: 'https://www.linkedin.com/in/itsjustinle/',
+    title: 'LinkedIn',
+    target: '_blank',
+  },
+  {
+    page: <i className='fas fa-file'></i>,
+    link:
+      'https://drive.google.com/open?id=1Lfk7fuRK00QHNPZGsmHmHFtbw0MWiwHb',
+    title: 'Résumé',
+    target: '_blank',
+  },
+];
+
 function Nav() {
-  const pages = [
-    {
-      page: 'about',
-      link: 'about',
-      alt: 'About Page',
-    },
-    {
-      page: 'projects',
-      link: 'projects',
-      alt: 'Projects Page',
-    },
-    {
-      page: 'contact',
-      link: 'contact',
-      alt: 'Contact Pages',
-    },
-  ];
-
-  const connections = [
-    {
-      page: <i className='fab fa-github'></i>,
-      link: 'https://github.com/twopcz',
-      alt: 'GitHub',
-      target: '_blank',
-    },
-    {
-      page: <i className='fab fa-linkedin'></i>,
-      link: 'https://www.linkedin.com/in/itsjustinle/',
-      alt: 'LinkedIn',
-      target: '_blank',
-    },
-    {
-      page: <i className='fas fa-file'></i>,
-      link:
-        'https://drive.google.com/open?id=1Lfk7fuRK00QHNPZGsmHmHFtbw0MWiwHb',
-      alt: 'Resume',
-      target: '_blank',
-    },
-  ];
-
   return (
-    <nav className='navbar navbar-light bg-dark shadow'>
+    <nav className='navbar fixed-top shadow' id='top-nav'>
       <div className='d-flex flex-sm-row flex-column w-100 justify-content-between'>
         <NavBrand />
         <NavLink
