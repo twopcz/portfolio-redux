@@ -1,0 +1,8 @@
+#top-nav {
+  background-color: white;
+}
+
+ul.nav li a,
+ul.nav li a:visited {
+  color: black !important;
+}
