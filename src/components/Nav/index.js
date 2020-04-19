@@ -44,7 +44,7 @@ function Nav() {
   ];
 
   return (
-    <nav className='navbar navbar-light bg-dark rounded-bottom'>
+    <nav className='navbar navbar-light bg-dark shadow'>
       <div className='d-flex w-100'>
         <NavBrand />
         <NavLink ul='nav justify-content-center font-weight-bold' li='nav-link' links={pages} />
