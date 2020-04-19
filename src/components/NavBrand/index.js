@@ -9,6 +9,7 @@ function NavBrand() {
           className='navbar-brand text-center rounded-circle'
           href='https://justinle.page'
           id='logo-name'
+          title='Home'
         >
           JL
         </a>
