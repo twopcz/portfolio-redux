@@ -24,16 +24,19 @@ const projectsOne = [
 
 const projectsTwo = [
   {
+    title: 'Test',
     link: '',
     image: 'https://via.placeholder.com/800x1000',
     alt: `project-4`,
   },
   {
+    title: 'Test',
     link: '',
     image: 'https://via.placeholder.com/800x1000',
     alt: `project-5`,
   },
   {
+    title: 'Test',
     link: '',
     image: 'https://via.placeholder.com/800x1000',
     alt: `project-6`,
@@ -44,20 +47,20 @@ function Projects() {
   return (
     <div>
       <div className='row justify-content-center' id='projects-top'>
-        <div className='container d-flex flex-row project-container'>
+        <div className='container d-flex flex-column flex-md-row project-container'>
           {projectsOne.map((data, index) => (
             <div className='col-md-4' key={`project-column-${index}`}>
-              <img className='img-fluid' src={data.image} alt={data.alt}></img>
+              <img className='img-fluid pb-4' src={data.image} alt={data.alt}></img>
               <div className='project-titles text-center'>{data.title}</div>
             </div>
           ))}
         </div>
       </div>
-      <div className='row justify-content-center py-4' id='projects-bottom'>
-        <div className='container d-flex flex-row project-container'>
+      <div className='row justify-content-center' id='projects-bottom'>
+        <div className='container d-flex flex-column flex-md-row project-container'>
         {projectsTwo.map((data, index) => (
             <div className='col-md-4' key={`project-column-${index}`}>
-              <img className='img-fluid' src={data.image} alt={data.alt}></img>
+              <img className='img-fluid pb-4' src={data.image} alt={data.alt}></img>
               <div className='project-titles text-center'>{data.title}</div>
             </div>
           ))}
