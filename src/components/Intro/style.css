@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+#intro {
+  background: #6f785d;
+  height: 65vh;
+}
