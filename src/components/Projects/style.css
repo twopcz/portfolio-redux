@@ -1,0 +1,19 @@
+.project-container {
+  position: relative;
+  text-align: center;
+}
+
+.project-titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#projects-top {
+  background: linear-gradient(red 50%, blue 50%);
+}
+
+#projects-bottom {
+  background-color: blue;
+}
