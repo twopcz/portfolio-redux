@@ -1,8 +1,8 @@
 import React from 'react';
-import './style.css';
 import ProjectRow from '../ProjectRow';
+import './style.css';
 
-const projectsOne = [
+const rowOne = [
   {
     title: 'PROJECT 3',
     link: '',
@@ -22,10 +22,10 @@ const projectsOne = [
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cb-ss.png?raw=true',
     alt: `project-3`,
-  },
+  }
 ];
 
-const projectsTwo = [
+const rowTwo = [
   {
     title: 'EMPLOYEE DIRECTORY',
     link: 'https://github.com/twopcz/Employee-Directory',
@@ -50,11 +50,14 @@ const projectsTwo = [
 function Projects() {
   return (
     <div className='Projects'>
-      <div className='row justify-content-center py-3' id='projects-header'>
+      <div className='row justify-content-center py-3 projects-heading' id='projects-header'>
         <span>projects</span>
       </div>
-      <ProjectRow projects={projectsOne} rowID='projects-top'/>
-      <ProjectRow projects={projectsTwo} rowID='projects-bottom'/>
+      <ProjectRow projects={rowOne} rowID='projects-top'/>
+      <ProjectRow projects={rowTwo} rowID='projects-bottom'/>
+      <div className='row justify-content-center py-3 projects-heading'>
+        <span>more on github</span>
+      </div>
     </div>
   );
 }
