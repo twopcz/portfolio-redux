@@ -20,7 +20,7 @@ const rowOne = [
   },
   {
     title: 'CUTIE BURGER',
-    link: 'https://github.com/twopcz/Burger',
+    link: 'https://cutie-burger.herokuapp.com/',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cb-ss.png?raw=true',
     alt: `project-3`,
