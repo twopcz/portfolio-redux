@@ -56,7 +56,7 @@ function Projects() {
       <ProjectRow projects={rowOne} rowID='projects-top'/>
       <ProjectRow projects={rowTwo} rowID='projects-bottom'/>
       <div className='row justify-content-center py-3 projects-heading'>
-        <span>more on github</span>
+        <span>& more on <a href='https://github.com/twopcz/' id='gh-link' rel="noopener noreferrer" target='_blank'>github</a>!</span>
       </div>
     </div>
   );
