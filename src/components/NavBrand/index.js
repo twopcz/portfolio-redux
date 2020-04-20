@@ -1,20 +1,21 @@
 import React from 'react';
 import './style.css';
+import { Col, Navbar } from 'react-bootstrap';
 
 function NavBrand() {
   return (
-    <div className='col-md-4'>
+    <Col md={4}>
       <div className='text-center text-md-left'>
-        <a
-          className='navbar-brand text-center rounded-circle'
-          href='https://justinle.page'
-          id='logo-name'
+        <Navbar.Brand
+          className='text-center rounded-circle'
+          href='#home'
           title='Home'
+          id='logo-name'
         >
           JL
-        </a>
+        </Navbar.Brand>
       </div>
-    </div>
+    </Col>
   );
 }
 

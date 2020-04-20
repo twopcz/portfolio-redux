@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.css';
+import { Col, Row } from 'react-bootstrap';
 
 function About() {
   return (
-    <div className='row justify-content-center'>
-      <div className='col-md-12 py-5'>
-        <div className='row justify-content-center'>
-          <div className='col-md-8'>
+    <Row className='justify-content-center'>
+      <Col md={12} className='py-5'>
+        <Row className='justify-content-center'>
+          <Col md={8}>
             <p className='pt-4 text-center'>
               Born and raised in Seattle, WA, I have always had a penchant for
               building and creating things. Always curious about how things
@@ -23,10 +24,10 @@ function About() {
               a car. I am always looking for new hobbies to pick up and keep me
               occupied outside of the office.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
   );
 }
 

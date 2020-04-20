@@ -1,7 +1,7 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import NavBrand from '../NavBrand';
 import NavLink from '../NavLink';
+import { Navbar } from 'react-bootstrap';
 
 import './style.css';
 
@@ -38,8 +38,7 @@ const connections = [
   },
   {
     page: <i className='fas fa-file'></i>,
-    link:
-      'https://drive.google.com/open?id=1Lfk7fuRK00QHNPZGsmHmHFtbw0MWiwHb',
+    link: 'https://drive.google.com/open?id=1Lfk7fuRK00QHNPZGsmHmHFtbw0MWiwHb',
     title: 'Résumé',
     target: '_blank',
   },
@@ -47,7 +46,7 @@ const connections = [
 
 function Nav() {
   return (
-    <nav className='navbar fixed-top shadow' id='top-nav'>
+    <Navbar fixed='top' className='shadow' id='top-nav'>
       <div className='d-flex flex-sm-row flex-column w-100 justify-content-between'>
         <NavBrand />
         <NavLink
@@ -61,7 +60,7 @@ function Nav() {
           links={connections}
         />
       </div>
-    </nav>
+    </Navbar>
   );
 }
 
