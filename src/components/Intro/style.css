@@ -12,5 +12,10 @@ p {
 #intro {
   background: #b5b9ab;
   height: 50vh;
-  margin-top: 136px;
+}
+
+@media (max-width: 768px) {
+  #intro {
+    margin-top: 136px;
+  }
 }
