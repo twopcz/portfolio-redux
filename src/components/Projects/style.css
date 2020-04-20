@@ -74,6 +74,15 @@
   background-color: #ffffff;
 }
 
+#gh-link {
+  color: black;
+  text-decoration: none;
+}
+
+#gh-link:hover {
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   #projects-header > span {
     padding-top: 25px;
