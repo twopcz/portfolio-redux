@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Col, Container, Row } from 'react-bootstrap';
 
 function ProjectRows(props) {
@@ -25,3 +26,12 @@ function ProjectRows(props) {
 }
 
 export default ProjectRows;
+
+ProjectRows.propTypes = {
+  link: PropTypes.string,
+  rowID: PropTypes.number,
+  projects: PropTypes.array.isRequired,
+  image: PropTypes.string,
+  alt: PropTypes.string,
+  title: PropTypes.string
+};
