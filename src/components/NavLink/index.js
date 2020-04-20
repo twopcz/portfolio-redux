@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Col } from 'react-bootstrap';
 
 function NavLink(props) {
   return (
-    <div className='col-md-4'>
+    <Col>
       <ul className={props.ul}>
         {props.links.map((data, index) => (
           <li className={props.li} key={`${index}-li`}>
-            <a href={data.link} title={data.title} target={data.target}>{data.page}</a>
+            <a href={data.link} title={data.title} target={data.target}>
+              {data.page}
+            </a>
           </li>
         ))}
       </ul>
-    </div>
+    </Col>
   );
 }
 
@@ -24,5 +27,5 @@ NavLink.propTypes = {
   links: PropTypes.array.isRequired,
   page: PropTypes.string,
   target: PropTypes.string,
-  ul: PropTypes.string
+  ul: PropTypes.string,
 };

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function ProjectRows(props) {
   return (
-    <div className='row justify-content-center' id={props.rowID}>
-      <div className='container d-flex flex-column flex-md-row'>
+    <Row className='justify-content-center' id={props.rowID}>
+      <Container className='d-flex flex-column flex-md-row'>
         {props.projects.map((data, index) => (
-          <div className='col-md-4' key={`project-column-${index}`}>
+          <Col key={`project-column-${index}`}>
             <a href={data.link}>
               <div className='project-container'>
                 <img
@@ -16,10 +17,10 @@ function ProjectRows(props) {
                 <div className='project-titles text-center'>{data.title}</div>
               </div>
             </a>
-          </div>
+          </Col>
         ))}
-      </div>
-    </div>
+      </Container>
+    </Row>
   );
 }
 
