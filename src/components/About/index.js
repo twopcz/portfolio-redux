@@ -1,22 +1,13 @@
 import React from 'react';
+import './style.css';
 
 function About() {
   return (
     <div className='row justify-content-center'>
-      <div className='col-md-9 py-5'>
-        <h1 className='font-weight-bold pb-3'>
-          ABOUT ME
-        </h1>
-        <div className='row d-flex align-items-center'>
-          <div className='col-md-4'>
-            <img
-              src='assets/images/profile_pic.jpg'
-              className='img-fluid rounded'
-              alt='profile'
-            />
-          </div>
-          <div className='col-md-7'>
-            <p className='pt-4'>
+      <div className='col-md-12 py-5'>
+        <div className='row justify-content-center'>
+          <div className='col-md-8'>
+            <p className='pt-4 text-center'>
               Born and raised in Seattle, WA, I have always had a penchant for
               building and creating things. Always curious about how things
               functioned, <s>destroying</s> disassembling and reconstructing
@@ -28,7 +19,9 @@ function About() {
               <br />
               <br />
               Outside of the computer screen, you can find me working to stay
-              active in the gym or getting my hands dirty underneath the hood of a car.
+              active in the gym or getting my hands dirty underneath the hood of
+              a car. I am always looking for new hobbies to pick up and keep me
+              occupied outside of the office.
             </p>
           </div>
         </div>
