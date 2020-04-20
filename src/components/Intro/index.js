@@ -5,9 +5,9 @@ function Intro() {
   return (
     <div className='row' id='intro'>
       <div className='my-auto px-5'>
-        <h1 className='display-3'>JUSTIN LE</h1>
+        <h1 className='display-3 pt-5'>JUSTIN LE</h1>
         <p className='lead'>
-          a full stack dev who is passionate about style and design
+          full stack dev based in <b>seattle, washington</b> with a passion for creating/designing beyond the computer screen
         </p>
       </div>
     </div>
