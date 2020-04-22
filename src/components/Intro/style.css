@@ -11,7 +11,7 @@ p {
 
 #intro {
   background: #b5b9ab;
-  height: 50vh;
+  height: 30vh;
 }
 
 #city {
@@ -21,5 +21,6 @@ p {
 @media (max-width: 500px) {
   #intro {
     margin-top: 136px;
+    padding-bottom: 170px;
   }
 }
