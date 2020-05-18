@@ -1,8 +1,9 @@
-import React from 'react';
-import Intro from '../Intro';
+import './style.css';
 import About from '../About';
-import Projects from '../Projects';
 import { Container } from 'react-bootstrap';
+import Intro from '../Intro';
+import Projects from '../Projects';
+import React from 'react';
 
 function Content() {
     return (
