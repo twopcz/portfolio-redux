@@ -1,14 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Col } from 'react-bootstrap';
-
 function NavLink(props) {
     return (
         <Col>
             <ul className={props.ul}>
                 {props.links.map((data, index) => (
                     <li className={props.li} key={`${index}-li`}>
-                        <a href={data.link} title={data.title}>
+                        <a
+                            href={data.link}
+                            title={data.title}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             {data.page}
                         </a>
                     </li>
