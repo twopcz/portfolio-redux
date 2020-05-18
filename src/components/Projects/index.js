@@ -1,81 +1,78 @@
 import React from 'react';
-import ProjectRow from '../ProjectRow';
+import { Col, Container, Row } from 'react-bootstrap';
 import './style.css';
 
-import { Row } from 'react-bootstrap';
-
-const rowOne = [
+const portfolio = [
   {
     title: 'PROJECT 3',
-    link: '',
+    github: 'https://github.com/twopcz/',
+    deployed: 'https://github.com/twopcz/project-2',
     image: 'https://via.placeholder.com/800x1000',
-    alt: `project-1`,
+    alt: 'project-3',
+    description: 'n/a',
   },
   {
     title: 'SNEAKER STORE CRM',
-    link: 'https://agile-headland-04774.herokuapp.com/',
+    github: 'https://github.com/twopcz/project-2',
+    deployed: 'https://agile-headland-04774.herokuapp.com/',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/crm-ss.png?raw=true',
-    alt: `project-3`,
+    alt: 'sneaker-crm',
+    description: '',
   },
   {
     title: 'CUTIE BURGER',
-    link: 'https://cutie-burger.herokuapp.com/',
+    github: 'https://github.com/twopcz/Burger',
+    deployed: 'https://cutie-burger.herokuapp.com/',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cb-ss.png?raw=true',
-    alt: `project-3`,
+    alt: 'burger-app',
+    description: '',
   },
-];
-
-const rowTwo = [
   {
     title: 'EMPLOYEE DIRECTORY',
-    link: 'https://github.com/twopcz/Employee-Directory',
+    github: 'https://github.com/twopcz/Employee-Directory',
+    deployed: 'https://github.com/twopcz/Employee-Directory',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/ed-ss.png?raw=true',
-    alt: `project-4`,
+    alt: 'employee-app',
+    description: '',
   },
   {
     title: 'BUDGET TRACKER',
-    link: 'https://justin-budget-tracker.herokuapp.com/',
+    github: 'https://github.com/twopcz/Budget-Tracker',
+    deployed: 'https://justin-budget-tracker.herokuapp.com/',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/bt-ss.png?raw=true',
-    alt: `project-5`,
+    alt: 'budget-app',
+    description: '',
   },
   {
     title: 'TEAM SUMMARY GENERATOR',
-    link: 'https://github.com/twopcz/Team-Summary-Generator',
+    github: 'https://github.com/twopcz/Team-Summary-Generator',
+    deployed: '',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cli-ss.png?raw=true',
-    alt: `project-6`,
+    alt: 'team-summary-app',
+    description: '',
   },
 ];
 
-function Projects() {
+function Projects(props) {
   return (
-    <div className='Projects'>
-      <Row
-        className='justify-content-center py-3 projects-heading'
-        id='projects-header'
-      >
-        <span>projects</span>
-      </Row>
-      <ProjectRow projects={rowOne} rowID='projects-top' />
-      <ProjectRow projects={rowTwo} rowID='projects-bottom' />
-      <Row className='justify-content-center py-3 projects-heading'>
-        <span>
-          & more on{' '}
-          <a
-            href='https://github.com/twopcz/'
-            id='gh-link'
-            rel='noopener noreferrer'
-            target='_blank'
-          >
-            github
-          </a>
-          !
-        </span>
-      </Row>
+    <div>
+      <Container fluid>
+        <Row>
+        {portfolio.map(projects => (
+            <Col md={4} key={projects.title}>
+                <h1>{projects.title}</h1>
+                <a href={projects.deplyed}><img className='img-fluid' src={projects.image} alt={projects.alt}></img></a>
+                <p>{projects.description}</p>
+                <a href={projects.github}>GITHUB</a>
+            </Col>
+        ))}
+        </Row>
+      </Container>
     </div>
   );
 }
