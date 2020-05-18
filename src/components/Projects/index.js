@@ -1,78 +1,81 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import ProjectRow from '../ProjectRow';
 import './style.css';
 
-const portfolio = [
+import { Row } from 'react-bootstrap';
+
+const rowOne = [
   {
     title: 'PROJECT 3',
-    github: 'https://github.com/twopcz/',
-    deployed: 'https://github.com/twopcz/project-2',
+    link: '',
     image: 'https://via.placeholder.com/800x1000',
-    alt: 'project-3',
-    description: 'n/a',
+    alt: `project-1`,
   },
   {
     title: 'SNEAKER STORE CRM',
-    github: 'https://github.com/twopcz/project-2',
-    deployed: 'https://agile-headland-04774.herokuapp.com/',
+    link: 'https://agile-headland-04774.herokuapp.com/',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/crm-ss.png?raw=true',
-    alt: 'sneaker-crm',
-    description: '',
+    alt: `project-3`,
   },
   {
     title: 'CUTIE BURGER',
-    github: 'https://github.com/twopcz/Burger',
-    deployed: 'https://cutie-burger.herokuapp.com/',
+    link: 'https://cutie-burger.herokuapp.com/',
     image:
       'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cb-ss.png?raw=true',
-    alt: 'burger-app',
-    description: '',
-  },
-  {
-    title: 'EMPLOYEE DIRECTORY',
-    github: 'https://github.com/twopcz/Employee-Directory',
-    deployed: 'https://github.com/twopcz/Employee-Directory',
-    image:
-      'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/ed-ss.png?raw=true',
-    alt: 'employee-app',
-    description: '',
-  },
-  {
-    title: 'BUDGET TRACKER',
-    github: 'https://github.com/twopcz/Budget-Tracker',
-    deployed: 'https://justin-budget-tracker.herokuapp.com/',
-    image:
-      'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/bt-ss.png?raw=true',
-    alt: 'budget-app',
-    description: '',
-  },
-  {
-    title: 'TEAM SUMMARY GENERATOR',
-    github: 'https://github.com/twopcz/Team-Summary-Generator',
-    deployed: '',
-    image:
-      'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cli-ss.png?raw=true',
-    alt: 'team-summary-app',
-    description: '',
+    alt: `project-3`,
   },
 ];
 
-function Projects(props) {
+const rowTwo = [
+  {
+    title: 'EMPLOYEE DIRECTORY',
+    link: 'https://github.com/twopcz/Employee-Directory',
+    image:
+      'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/ed-ss.png?raw=true',
+    alt: `project-4`,
+  },
+  {
+    title: 'BUDGET TRACKER',
+    link: 'https://justin-budget-tracker.herokuapp.com/',
+    image:
+      'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/bt-ss.png?raw=true',
+    alt: `project-5`,
+  },
+  {
+    title: 'TEAM SUMMARY GENERATOR',
+    link: 'https://github.com/twopcz/Team-Summary-Generator',
+    image:
+      'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cli-ss.png?raw=true',
+    alt: `project-6`,
+  },
+];
+
+function Projects() {
   return (
-    <div>
-      <Container fluid>
-        <Row>
-        {portfolio.map(projects => (
-            <Col md={4} key={projects.title}>
-                <h1>{projects.title}</h1>
-                <a href={projects.deplyed}><img className='img-fluid' src={projects.image} alt={projects.alt}></img></a>
-                <p>{projects.description}</p>
-                <a href={projects.github}>GITHUB</a>
-            </Col>
-        ))}
-        </Row>
-      </Container>
+    <div className='Projects'>
+      <Row
+        className='justify-content-center py-3 projects-heading'
+        id='projects-header'
+      >
+        <span>projects</span>
+      </Row>
+      <ProjectRow projects={rowOne} rowID='projects-top' />
+      <ProjectRow projects={rowTwo} rowID='projects-bottom' />
+      <Row className='justify-content-center py-3 projects-heading'>
+        <span>
+          & more on{' '}
+          <a
+            href='https://github.com/twopcz/'
+            id='gh-link'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            github
+          </a>
+          !
+        </span>
+      </Row>
     </div>
   );
 }
