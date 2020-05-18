@@ -4,7 +4,7 @@ import { Row } from 'react-bootstrap';
 
 function Intro() {
   return (
-    <Row id='intro' className='mt-5'>
+    <Row id='intro'>
       <div className='my-auto px-5'>
         <h1 className='display-3 pt-5'>JUSTIN LE</h1>
         <p className='lead'>
