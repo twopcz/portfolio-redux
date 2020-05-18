@@ -8,12 +8,7 @@ function NavLink(props) {
             <ul className={props.ul}>
                 {props.links.map((data, index) => (
                     <li className={props.li} key={`${index}-li`}>
-                        <a
-                            href={data.link}
-                            title={data.title}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href={data.link} title={data.title}>
                             {data.page}
                         </a>
                     </li>
