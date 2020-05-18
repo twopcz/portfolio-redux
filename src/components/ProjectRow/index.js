@@ -8,7 +8,11 @@ function ProjectRows(props) {
             <Container className="d-flex flex-column flex-md-row">
                 {props.projects.map((data, index) => (
                     <Col key={`project-column-${index}`}>
-                        <a href={data.link}>
+                        <a
+                            href={data.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <div className="project-container">
                                 <img
                                     className="img-fluid"
