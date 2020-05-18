@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 function ProjectRows(props) {
     return (
-        <Row className="justify-content-center" id={props.rowID}>
+        <div className="justify-content-center" id={props.rowID}>
             <Container className="d-flex flex-column flex-md-row">
                 {props.projects.map((data, index) => (
                     <Col key={`project-column-${index}`}>
@@ -27,7 +27,7 @@ function ProjectRows(props) {
                     </Col>
                 ))}
             </Container>
-        </Row>
+        </div>
     );
 }
 
