@@ -4,7 +4,7 @@ import { Col, Navbar } from 'react-bootstrap';
 
 function NavBrand() {
   return (
-    <Col md={4}>
+    <Col>
       <div className='text-center text-md-left'>
         <Navbar.Brand
           className='text-center rounded-circle'
