@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBrand from '../NavBrand';
+import NavPages from '../NavPages';
 import NavLink from '../NavLink';
 import { Navbar } from 'react-bootstrap';
 
@@ -46,21 +47,21 @@ const connections = [
 
 function Nav() {
   return (
-    <Navbar fixed='top' className='shadow' id='top-nav'>
-      <div className='d-flex flex-sm-row flex-column w-100 justify-content-between'>
-        <NavBrand />
-        <NavLink
-          ul='nav justify-content-center font-weight-bold'
-          li='nav-link'
-          links={pages}
-        />
-        <NavLink
-          ul='nav justify-content-center float-md-right'
-          li='nav-link'
-          links={connections}
-        />
-      </div>
-    </Navbar>
+      <Navbar fixed='top' className='shadow' id='top-nav'>
+        <div className='d-flex flex-sm-row flex-column w-100 justify-content-between'>
+          <NavBrand />
+          <NavPages
+            ul='nav justify-content-center font-weight-bold'
+            li='nav-link'
+            links={pages}
+          />
+          <NavLink
+            ul='nav justify-content-center float-md-right'
+            li='nav-link'
+            links={connections}
+          />
+        </div>
+      </Navbar>
   );
 }
 
