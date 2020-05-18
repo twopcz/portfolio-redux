@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Col, Container, Row } from 'react-bootstrap';
 
-function ProjectPreviews(props) {
+function ProjectRows(props) {
   return (
     <Row className='justify-content-center' id={props.rowID}>
       <Container className='d-flex flex-column flex-md-row'>
@@ -25,11 +25,11 @@ function ProjectPreviews(props) {
   );
 }
 
-export default ProjectPreviews;
+export default ProjectRows;
 
-ProjectPreviews.propTypes = {
+ProjectRows.propTypes = {
   link: PropTypes.string,
-  rowID: PropTypes.string,
+  rowID: PropTypes.number,
   projects: PropTypes.array.isRequired,
   image: PropTypes.string,
   alt: PropTypes.string,
