@@ -1,9 +1,8 @@
+import './style.css';
 import React from 'react';
 import NavBrand from '../NavBrand';
 import NavLink from '../NavLink';
 import { Navbar } from 'react-bootstrap';
-
-import './style.css';
 
 const pages = [
     {
@@ -27,20 +26,17 @@ const connections = [
     {
         page: <i className="fab fa-github"></i>,
         link: 'https://github.com/twopcz',
-        title: 'GitHub',
-        target: '_blank'
+        title: 'GitHub'
     },
     {
         page: <i className="fab fa-linkedin"></i>,
         link: 'https://www.linkedin.com/in/itsjustinle/',
-        title: 'LinkedIn',
-        target: '_blank'
+        title: 'LinkedIn'
     },
     {
         page: <i className="fas fa-file"></i>,
         link: 'https://resume.justinle.page',
-        title: 'Résumé',
-        target: '_blank'
+        title: 'Résumé'
     }
 ];
 
