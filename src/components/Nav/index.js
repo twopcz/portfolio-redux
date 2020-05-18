@@ -2,22 +2,23 @@ import './style.css';
 import React from 'react';
 import NavBrand from '../NavBrand';
 import NavLink from '../NavLink';
+import ComponentLink from '../ComponentLink';
 import { Navbar } from 'react-bootstrap';
 
 const pages = [
     {
         page: 'about',
-        link: 'about',
+        link: '/about',
         title: 'About Page'
     },
     {
         page: 'projects',
-        link: 'projects',
+        link: '/projects',
         title: 'Projects Page'
     },
     {
         page: 'contact',
-        link: 'contact',
+        link: '/contact',
         title: 'Contact Pages'
     }
 ];
@@ -45,7 +46,7 @@ function Nav() {
         <Navbar fixed="top" className="shadow" id="top-nav">
             <div className="d-flex flex-sm-row flex-column w-100 justify-content-between">
                 <NavBrand />
-                <NavLink
+                <ComponentLink
                     ul="nav justify-content-center font-weight-bold"
                     li="nav-link"
                     links={pages}
