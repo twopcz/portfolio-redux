@@ -54,17 +54,17 @@ const rowTwo = [
 
 function Projects() {
     return (
-        <div className="Projects">
-            <Row
-                className="justify-content-center py-3 projects-heading"
+        <Row className="Projects d-flex flex-column">
+            <div
+                className="text-center py-3 projects-heading"
                 id="projects-header"
             >
                 <span>projects</span>
-            </Row>
+            </div>
             <ProjectRow projects={rowOne} rowID="projects-top" />
             <ProjectRow projects={rowTwo} rowID="projects-bottom" />
-            <Row className="justify-content-center py-3 projects-heading">
-                <span>
+            {/* <div className="justify-content-center py-3 projects-heading">
+                <div className="text-center">
                     & more on{' '}
                     <a
                         href="https://github.com/twopcz/"
@@ -75,9 +75,9 @@ function Projects() {
                         github
                     </a>
                     !
-                </span>
-            </Row>
-        </div>
+                </div>
+            </div> */}
+        </Row>
     );
 }
 
