@@ -1,26 +1,26 @@
 h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #intro {
-  background: #b5b9ab;
-  height: 30vh;
+    background: #b5b9ab;
+    height: 30vh;
 }
 
 #city {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 @media (max-width: 500px) {
-  #intro {
-    margin-top: 136px;
-    padding-bottom: 170px;
-  }
+    #intro {
+        margin-top: 136px;
+        /* padding-bottom: 170px; */
+    }
 }
