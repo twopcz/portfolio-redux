@@ -1,0 +1,19 @@
+@media (max-width: 500px) {
+    .project-page {
+        margin-top: 136px;
+    }
+}
+
+.project-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+small {
+    font-family: 'Roboto', sans-serif;
+}
+
+.badge {
+    font-family: 'Roboto', sans-serif;
+}
