@@ -1,7 +1,6 @@
-import React from 'react';
-import ProjectRow from '../ProjectRow';
 import './style.css';
-
+import ProjectRow from '../ProjectRow';
+import React from 'react';
 import { Row } from 'react-bootstrap';
 
 const rowOne = [
@@ -59,7 +58,9 @@ function Projects() {
                 className="text-center py-3 projects-heading"
                 id="projects-header"
             >
-                <span>projects</span>
+                <a href="/projects" className="text-decoration-none text-dark">
+                    projects
+                </a>
             </div>
             <ProjectRow projects={rowOne} rowID="projects-top" />
             <ProjectRow projects={rowTwo} rowID="projects-bottom" />
