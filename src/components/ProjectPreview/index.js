@@ -1,7 +1,7 @@
 import './style.css';
 import ProjectRow from '../ProjectRow';
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 const rowOne = [
     {
@@ -53,20 +53,17 @@ const rowTwo = [
 
 function ProjectPreview() {
     return (
-        <Row className="Projects d-flex flex-column">
-            <div
-                className="text-center py-3 projects-heading"
-                id="projects-header"
-            >
-                <a href="/projects" className="text-decoration-none text-dark">
+        <Row className="Projects d-flex flex-column" id="projects">
+            <div className="text-center py-3" id="projects-header">
+                <a href="/projects" className="text-dark projects-heading">
                     projects
                 </a>
+                <div>
+                    <small>(click 'projects' for more details)</small>
+                </div>
             </div>
             <ProjectRow projects={rowOne} rowID="projects-top" />
             <ProjectRow projects={rowTwo} rowID="projects-bottom" />
-            <Col>
-                <div>Testing</div>
-            </Col>
         </Row>
     );
 }
