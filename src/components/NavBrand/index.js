@@ -7,7 +7,7 @@ function NavBrand() {
         <Col md={4}>
             <div className="text-center text-md-left">
                 <Navbar.Brand
-                    className="text-center rounded-circle"
+                    className="text-center rounded-circle mx-0"
                     href="/"
                     title="Home"
                     id="logo-name"
