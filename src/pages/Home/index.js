@@ -5,19 +5,13 @@ import React from 'react';
 function Home() {
     const pages = [
         {
-            page: 'about',
-            link: '/about',
-            title: 'About Page'
+            page: 'about'
         },
         {
-            page: 'projects',
-            link: '/projects',
-            title: 'Projects Page'
+            page: 'projects'
         },
         {
-            page: 'contact',
-            link: '/contact',
-            title: 'Contact Pages'
+            page: 'contact'
         }
     ];
 
