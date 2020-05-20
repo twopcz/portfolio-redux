@@ -1,8 +1,21 @@
 import './style.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Nav from '../../components/Nav';
 
 export default function ProjectPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const page = [
+        {
+            page: 'home',
+            link: '/',
+            title: 'Home Page'
+        }
+    ];
+
     const projects = [
         {
             name: `ORDER UP`,
@@ -59,58 +72,64 @@ export default function ProjectPage() {
     ];
 
     return (
-        <Container fluid className="pt-md-5 project-page">
-            {projects.map((project, index) => (
-                <Row
-                    className="justify-content-center"
-                    key={`project-row-${index}`}
-                >
-                    <Col
-                        md={10}
-                        className="d-flex flex-column flex-md-row py-5"
-                        key={`project-container-${index}`}
+        <>
+            <Nav pages={page} />
+            <Container fluid className="pt-md-5 project-page">
+                {projects.map((project, index) => (
+                    <Row
+                        className="justify-content-center"
+                        key={`project-row-${index}`}
                     >
-                        <Col key={`project-pic-${index}`}>
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    className="img-fluid project-container"
-                                    src={project.image}
-                                    alt={`${project.name}-screenshot`}
-                                ></img>
-                            </a>
-                        </Col>
-                        <Col className="my-auto" key={`project-desc-${index}`}>
-                            <div>
-                                <h2 className="project-heading">
-                                    {project.name}
-                                </h2>
-                            </div>
-                            <div>
-                                <small className="text-muted">
-                                    {project.tech}
-                                </small>
-                            </div>
-                            <div>
-                                <p>{project.description}</p>
-                            </div>
-                            <div>
+                        <Col
+                            md={10}
+                            className="d-flex flex-column flex-md-row py-5"
+                            key={`project-container-${index}`}
+                        >
+                            <Col key={`project-pic-${index}`}>
                                 <a
-                                    href={project.repo}
+                                    href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="badge badge-secondary"
                                 >
-                                    Repository
+                                    <img
+                                        className="img-fluid project-container"
+                                        src={project.image}
+                                        alt={`${project.name}-screenshot`}
+                                    ></img>
                                 </a>
-                            </div>
+                            </Col>
+                            <Col
+                                className="my-auto"
+                                key={`project-desc-${index}`}
+                            >
+                                <div>
+                                    <h2 className="project-heading">
+                                        {project.name}
+                                    </h2>
+                                </div>
+                                <div>
+                                    <small className="text-muted">
+                                        {project.tech}
+                                    </small>
+                                </div>
+                                <div>
+                                    <p>{project.description}</p>
+                                </div>
+                                <div>
+                                    <a
+                                        href={project.repo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="badge badge-secondary"
+                                    >
+                                        Repository
+                                    </a>
+                                </div>
+                            </Col>
                         </Col>
-                    </Col>
-                </Row>
-            ))}
-        </Container>
+                    </Row>
+                ))}
+            </Container>
+        </>
     );
 }
