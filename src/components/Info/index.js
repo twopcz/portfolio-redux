@@ -2,9 +2,9 @@ import './style.css';
 import { Col, Row } from 'react-bootstrap';
 import React from 'react';
 
-function About() {
+function Info() {
     return (
-        <Row className="justify-content-center">
+        <Row className="justify-content-center" id="about">
             <Col md={12} className="py-3">
                 <Row className="justify-content-center">
                     <Col md={8}>
@@ -18,14 +18,13 @@ function About() {
                             centered around computers/technology and becoming a
                             developer was the next logical transition. I really
                             enjoy designing/creating things that look great and
-                            function well from the ground up.
-                            <br />
-                            <br />
-                            Outside of the computer screen, you can find me
-                            working to stay active in the gym or getting my
-                            hands dirty underneath the hood of a car. I am
-                            always looking for new hobbies to pick up and keep
-                            me occupied outside of the office.
+                            function well from the ground up.{' '}
+                            <a
+                                href="/contact"
+                                className="text-decoration-none text-dark font-weight-bold"
+                            >
+                                Let's build something together!
+                            </a>
                         </p>
                     </Col>
                 </Row>
@@ -34,4 +33,4 @@ function About() {
     );
 }
 
-export default About;
+export default Info;

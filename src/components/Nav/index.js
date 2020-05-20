@@ -1,27 +1,9 @@
 import './style.css';
-import React from 'react';
-import NavBrand from '../NavBrand';
-import NavLink from '../NavLink';
 import ComponentLink from '../ComponentLink';
 import { Navbar } from 'react-bootstrap';
-
-const pages = [
-    {
-        page: 'about',
-        link: '/about',
-        title: 'About Page'
-    },
-    {
-        page: 'projects',
-        link: '/projects',
-        title: 'Projects Page'
-    },
-    {
-        page: 'contact',
-        link: '/contact',
-        title: 'Contact Pages'
-    }
-];
+import NavBrand from '../NavBrand';
+import NavLink from '../NavLink';
+import React from 'react';
 
 const connections = [
     {
@@ -41,7 +23,7 @@ const connections = [
     }
 ];
 
-function Nav() {
+function Nav(props) {
     return (
         <Navbar fixed="top" className="shadow" id="top-nav">
             <div className="d-flex flex-sm-row flex-column w-100 justify-content-between">
@@ -49,7 +31,7 @@ function Nav() {
                 <ComponentLink
                     ul="nav justify-content-center font-weight-bold"
                     li="nav-link"
-                    links={pages}
+                    links={props.pages}
                 />
                 <NavLink
                     ul="nav justify-content-center float-md-right"

@@ -1,7 +1,7 @@
 import './style.css';
 import ProjectRow from '../ProjectRow';
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 const rowOne = [
     {
@@ -15,14 +15,14 @@ const rowOne = [
         title: 'SNEAKER STORE CRM',
         link: 'https://agile-headland-04774.herokuapp.com/',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/crm-ss.png?raw=true',
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/crm-ss.png?raw=true',
         alt: `project-2`
     },
     {
         title: 'CUTIE BURGER',
         link: 'https://cutie-burger.herokuapp.com/',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cb-ss.png?raw=true',
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/cb-ss.png?raw=true',
         alt: `project-3`
     }
 ];
@@ -32,26 +32,26 @@ const rowTwo = [
         title: 'EMPLOYEE DIRECTORY',
         link: 'https://github.com/twopcz/Employee-Directory',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/ed-ss.png?raw=true',
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/ed-ss.png?raw=true',
         alt: `project-4`
     },
     {
         title: 'BUDGET TRACKER',
         link: 'https://justin-budget-tracker.herokuapp.com/',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/bt-ss.png?raw=true',
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/bt-ss.png?raw=true',
         alt: `project-5`
     },
     {
         title: 'TEAM SUMMARY GENERATOR',
         link: 'https://github.com/twopcz/Team-Summary-Generator',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/Dev/src/assets/images/cli-ss.png?raw=true',
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/cli-ss.png?raw=true',
         alt: `project-6`
     }
 ];
 
-function Projects() {
+function ProjectPreview() {
     return (
         <Row className="Projects d-flex flex-column">
             <div
@@ -64,22 +64,11 @@ function Projects() {
             </div>
             <ProjectRow projects={rowOne} rowID="projects-top" />
             <ProjectRow projects={rowTwo} rowID="projects-bottom" />
-            {/* <div className="justify-content-center py-3 projects-heading">
-                <div className="text-center">
-                    & more on{' '}
-                    <a
-                        href="https://github.com/twopcz/"
-                        id="gh-link"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        github
-                    </a>
-                    !
-                </div>
-            </div> */}
+            <Col>
+                <div>Testing</div>
+            </Col>
         </Row>
     );
 }
 
-export default Projects;
+export default ProjectPreview;
