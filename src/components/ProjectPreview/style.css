@@ -1,0 +1,90 @@
+.project-container {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: auto;
+  display: inline-block;
+}
+
+.project-container img {
+  max-width: 100%;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.project-container:hover img {
+  -webkit-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.project-container:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.project-container:hover:before {
+  opacity: 1;
+}
+
+.project-container:hover .project-titles {
+  visibility: visible;
+}
+
+.project-titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  visibility: hidden;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.projects-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+#projects-header {
+  background: #b5b9ab;
+}
+
+#projects-top {
+  background: linear-gradient(#b5b9ab 50%, #ffffff 50%);
+}
+
+#projects-bottom {
+  background-color: #ffffff;
+}
+
+#gh-link {
+  color: black;
+  text-decoration: none;
+}
+
+#gh-link:hover {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  #projects-header > span {
+    padding-top: 25px;
+  }
+}
