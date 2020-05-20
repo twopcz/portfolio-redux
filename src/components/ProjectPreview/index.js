@@ -55,7 +55,7 @@ function ProjectPreview() {
     return (
         <Row className="Projects d-flex flex-column" id="projects">
             <div className="text-center py-3" id="projects-header">
-                <a href="/projects" className="text-dark projects-heading">
+                <a href="#/projects" className="text-dark projects-heading">
                     projects
                 </a>
                 <div>
