@@ -75,6 +75,9 @@ export default function ProjectPage() {
         <>
             <Nav pages={page} />
             <Container fluid className="pt-md-5 project-page">
+                <Row className="justify-content-center py-3">
+                    <div className="project-heading">project details</div>
+                </Row>
                 {projects.map((project, index) => (
                     <Row
                         className="justify-content-center"
@@ -82,7 +85,7 @@ export default function ProjectPage() {
                     >
                         <Col
                             md={10}
-                            className="d-flex flex-column flex-md-row py-5"
+                            className="d-flex flex-column flex-md-row py-2"
                             key={`project-container-${index}`}
                         >
                             <Col key={`project-pic-${index}`}>
