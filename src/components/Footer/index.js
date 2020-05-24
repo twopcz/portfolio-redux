@@ -5,7 +5,7 @@ import React from 'react';
 function Footer() {
     return (
         <>
-            <div className="text-center scroll-up pt-5 pb-2">
+            <div className="text-center scroll-up py-2">
                 <Link
                     to="top"
                     spy={true}

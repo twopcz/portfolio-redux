@@ -75,7 +75,7 @@ export default function ProjectPage() {
     return (
         <>
             <Nav pages={page} />
-            <Container fluid className="pt-md-5 project-page">
+            <Container fluid className="py-md-5 project-page">
                 <Row className="justify-content-center py-3">
                     <div className="project-heading">project details</div>
                 </Row>
