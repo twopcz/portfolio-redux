@@ -62,12 +62,13 @@ export default function ProjectPage() {
             description: `A budget tracker application used to help the user visualize their spending habits. The web application can also be installed as a PWA (Progessive Web App) for online/offline use, so that the user can master their budget if they are not able to be connected to the internet.`
         },
         {
-            name: `TEAM SUMMARY GENERATOR`,
+            name: `BZY-KAI.COM`,
             image:
-                'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/tsg-ss-2.png?raw=true',
-            repo: 'https://github.com/twopcz/Team-Summary-Generator',
-            tech: `Node`,
-            description: `This application creates a .html file based on the user's input via the command line. The web page displays the team's composition made up of the manager, the engineers, and the interns with their relevant information in an easily digestable format.`
+                'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/bk-ss.png?raw=true',
+            link: 'https://bzy-kai.com',
+            repo: 'https://github.com/twopcz/bzy-kai',
+            tech: `React`,
+            description: `Website designed and developed to showcase some of the artist's past works, allow customers to get in touch, and redirect to a bigcartel page for ecommerce. Contact form is done via email.js as the hosting site does not support Node.js for the backend. Stylized per the client's request.`
         }
     ];
 

@@ -9,21 +9,21 @@ const rowOne = [
         link: 'https://order-up-jkrtr.herokuapp.com/',
         image:
             'https://github.com/twopcz/portfolio-redux/blob/update/src/assets/images/ou-ss.png?raw=true',
-        alt: `project-1`
+        alt: `order-up-rms`
     },
     {
         title: 'SNEAKER STORE CRM',
         link: 'https://agile-headland-04774.herokuapp.com/',
         image:
             'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/crm-ss.png?raw=true',
-        alt: `project-2`
+        alt: `sneaker-store-crm`
     },
     {
         title: 'CUTIE BURGER',
         link: 'https://cutie-burger.herokuapp.com/',
         image:
             'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/cb-ss.png?raw=true',
-        alt: `project-3`
+        alt: `cutie-burger`
     }
 ];
 
@@ -33,21 +33,21 @@ const rowTwo = [
         link: 'https://github.com/twopcz/Employee-Directory',
         image:
             'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/ed-ss.png?raw=true',
-        alt: `project-4`
+        alt: `employee-directory`
     },
     {
         title: 'BUDGET TRACKER',
         link: 'https://justin-budget-tracker.herokuapp.com/',
         image:
             'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/bt-ss.png?raw=true',
-        alt: `project-5`
+        alt: `budget-tracker`
     },
     {
-        title: 'TEAM SUMMARY GENERATOR',
-        link: 'https://github.com/twopcz/Team-Summary-Generator',
+        title: 'BZY-KAI.COM',
+        link: 'https://bzy-kai.com',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/cli-ss.png?raw=true',
-        alt: `project-6`
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/bk-ss.png?raw=true',
+        alt: `bzy-kai.com`
     }
 ];
 
