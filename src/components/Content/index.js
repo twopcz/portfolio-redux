@@ -24,7 +24,7 @@ function Content() {
             </a>
         ),
         id: 'contact',
-        body: `Let's collaborate. Get in touch with me via e-mail by clicking 'contact,' or tap in up top to see my GitHub, LinkedIn, and digital resume.`
+        body: `Let's collaborate! Get in touch with me via e-mail by clicking 'contact,' or tap in up top to see my GitHub, LinkedIn, and digital resume.`
     };
 
     const technologies = {
