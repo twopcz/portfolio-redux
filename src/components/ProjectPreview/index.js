@@ -8,7 +8,7 @@ const rowOne = [
         title: 'ORDER UP',
         link: 'https://order-up-jkrtr.herokuapp.com/',
         image:
-            'https://github.com/twopcz/portfolio-redux/blob/update/src/assets/images/ou-ss.png?raw=true',
+            'https://github.com/twopcz/portfolio-redux/blob/master/src/assets/images/ou-ss.png?raw=true',
         alt: `order-up-rms`
     },
     {
