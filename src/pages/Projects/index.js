@@ -106,7 +106,7 @@ export default function ProjectPage() {
                                 key={`project-desc-${index}`}
                             >
                                 <div>
-                                    <h2 className="project-heading">
+                                    <h2 className="project-heading pt-3">
                                         {project.name}
                                     </h2>
                                 </div>

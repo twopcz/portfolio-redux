@@ -7,7 +7,7 @@ function ProjectRows(props) {
         <div className="justify-content-center" id={props.rowID}>
             <Container className="d-flex flex-column flex-md-row">
                 {props.projects.map((data, index) => (
-                    <Col key={`project-column-${index}`}>
+                    <Col className="py-2" key={`project-column-${index}`}>
                         <a
                             href={data.link}
                             target="_blank"
